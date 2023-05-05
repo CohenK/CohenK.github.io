@@ -34,8 +34,8 @@ function About() {
   ];
 
   let imagesc1: string[] = [
-    "src/assets/tree.jpg",
-    "src/assets/blade2.png",
+    "../assets/tree.jpg",
+    "/src/assets/blade2.png",
     "src/assets/camping2.png",
   ];
   let imagesc2: string[] = [
