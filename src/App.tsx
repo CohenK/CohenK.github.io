@@ -29,7 +29,7 @@ function App() {
       Component = <About />;
       break;
     case "/about":
-      Component = <About />;
+      Component = <Home />;
       break;
     case "/skillsandprojects":
       Component = <Skills />;
