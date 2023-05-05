@@ -35,24 +35,24 @@ function About() {
   ];
 
   let imagesc1 = [
-    "/public/assets/tree.jpg",
-    "/public/assets/blade2.png",
-    "/public/assets/camping2.png",
+    "/assets/tree.jpg",
+    "/assets/blade2.png",
+    "/assets/camping2.png",
   ];
   let imagesc2: string[] = [
-    "/public/assets/OrigamiSwan.jpg",
-    "/public/assets/meSitting2.jpg",
-    "/public/assets/camping1.png",
+    "/assets/OrigamiSwan.jpg",
+    "/assets/meSitting2.jpg",
+    "/assets/camping1.png",
   ];
   let imagesc3: string[] = [
-    "/public/assets/me on bike.jpg",
-    "/public/assets/lake.jpg",
-    "/public/assets/yosemite.JPG",
+    "/assets/me on bike.jpg",
+    "/assets/lake.jpg",
+    "/assets/yosemite.JPG",
   ];
   let imagesc4: string[] = [
-    "/public/assets/unicorn.jpg",
-    "/public/assets/bladeAlt.png",
-    "/public/assets/flowers.png",
+    "/assets/unicorn.jpg",
+    "/assets/bladeAlt.png",
+    "/assets/flowers.png",
   ];
 
   React.useEffect(() => {

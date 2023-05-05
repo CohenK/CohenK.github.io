@@ -1,46 +1,46 @@
-import "./styles/Skills.css";
+import "../styles/Skills.css";
 import ProjectDisplay from "./projectDisplay.tsx";
 
 function Skills() {
   let skills: [string, string][] = [
-    ["HTML", "public/assets/HTML.png"],
-    ["CSS", "public/assets/CSS.png"],
-    ["Python", "public/assets/Python.png"],
-    ["C++", "public/assets/C++.png"],
-    ["C#", "public/assets/Csharp.png"],
-    ["Unity", "public/assets/Unity.png"],
-    ["Javascript", "public/assets/Javascript.png"],
-    ["React", "public/assets/React.png"],
-    ["Typescript", "public/assets/Typescript.png"],
-    ["Node", "public/assets/node.png"],
-    ["Matlab", "public/assets/Matlab.png"],
-    ["MySQL", "public/assets/SQL.png"],
+    ["HTML", "/assets/HTML.png"],
+    ["CSS", "/assets/CSS.png"],
+    ["Python", "/assets/Python.png"],
+    ["C++", "/assets/C++.png"],
+    ["C#", "/assets/Csharp.png"],
+    ["Unity", "/assets/Unity.png"],
+    ["Javascript", "/assets/Javascript.png"],
+    ["React", "/assets/React.png"],
+    ["Typescript", "/assets/Typescript.png"],
+    ["Node", "/assets/node.png"],
+    ["Matlab", "/assets/Matlab.png"],
+    ["MySQL", "/assets/SQL.png"],
   ];
   let projects: [string, string, [string, string?][]?][] = [
     [
       "MyPasswordManager",
       "A simplistic accounts manager that needs no access to the internet written in Python. Like most people I did not want the hassle of having multiple passwords for different sites and writing them on the piece of paper. At the same time I fear the day where the only password I have will be exposed, so I needed a password manager similar to the popular app LastPass. The issue was I didn't want to pay anything and with all the cyber security issues this past decade I didn't want to have anymore of my data on the internet, so I made use of what I learned and wrote an app that does what I need it to do.",
       [
-        ["Custom GUI", "public/assets/Projects/GUI.png"],
+        ["Custom GUI", "/assets/Projects/GUI.png"],
         [
           "Custom Randomized Password Generator",
-          "public/assets/Projects/password generator.png",
+          "/assets/Projects/password generator.png",
         ],
         [
           "Built in querying for searches based on username/email",
-          "public/assets/Projects/Search.png",
+          "/assets/Projects/Search.png",
         ],
         [
           "Local data storage on your computer",
-          "public/assets/Projects/local storage.png",
+          "/assets/Projects/local storage.png",
         ],
         [
           "Multiple profiles supported",
-          "public/assets/Projects/multiple users.png",
+          "/assets/Projects/multiple users.png",
         ],
         [
           "Data Encryption via python's cryptography library",
-          "public/assets/Projects/encryption.png",
+          "/assets/Projects/encryption.png",
         ],
       ],
     ],
@@ -50,15 +50,15 @@ function Skills() {
       [
         [
           "Random object instantiation",
-          "public/assets/Projects/random object instantiation.png",
+          "/assets/Projects/random object instantiation.png",
         ],
         [
           "Unit collision detection",
-          "public/assets/Projects/collision detection.png",
+          "/assets/Projects/collision detection.png",
         ],
         [
           "Custom texturing and 3D modelling",
-          "public/assets/Projects/texturing.png",
+          "/assets/Projects/texturing.png",
         ],
       ],
     ],
@@ -77,10 +77,10 @@ function Skills() {
       "This website",
       "This is my take on a modern portfolio website!",
       [
-        ["Light and Dark mode", "public/assets/LightDarkMode.gif"],
+        ["Light and Dark mode", "/assets/LightDarkMode.gif"],
         ["Reusable react components"],
-        ["Multiple page routing", "public/assets/PageRouting.gif"],
-        ["Custom animations", "public/assets/customAnimation.gif"],
+        ["Multiple page routing", "/assets/PageRouting.gif"],
+        ["Custom animations", "/assets/customAnimation.gif"],
         ["Dynamic rendering"],
       ],
     ],

@@ -114,7 +114,7 @@
 }
 
 .AboutPage .layerTop {
-  background-image: url("public/assets/blueOrangeTransition.svg");
+  background-image: url("/assets/blueOrangeTransition.svg");
 }
 
 .AboutPage .transitionBot {
@@ -130,7 +130,7 @@
 }
 
 .AboutPage .layerBot {
-  background-image: url("public/assets/blueOrangeTransition1.svg");
+  background-image: url("/assets/blueOrangeTransition1.svg");
 }
 
 .before {
