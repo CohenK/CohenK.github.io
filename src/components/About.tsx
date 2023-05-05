@@ -36,7 +36,7 @@ function About() {
   let imagesc1: string[] = [
     "../assets/tree.jpg",
     "/src/assets/blade2.png",
-    "src/assets/camping2.png",
+    "/CohenK.github.io/src/assets/camping2.png",
   ];
   let imagesc2: string[] = [
     "src/assets/OrigamiSwan.jpg",
