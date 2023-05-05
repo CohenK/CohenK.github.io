@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import tree from "/assets/tree.jpg";
+import tree from "../assets/tree.jpg";
 
 function About() {
   let hobbies: [string, string][] = [
