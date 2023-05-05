@@ -1,4 +1,4 @@
-import "/src/styles/Resources.css";
+import "./styles/Resources.css";
 
 let resourceList: [string, string, string, string][] = [
   [

@@ -1,5 +1,5 @@
 import React from "react";
-import "/src/styles/About.css";
+import "./styles/About.css";
 
 function About() {
   let hobbies: [string, string][] = [

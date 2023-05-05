@@ -1,4 +1,4 @@
-import "/src/styles/projectDisplay.css";
+import "./styles/projectDisplay.css";
 
 interface Props {
   name: string;

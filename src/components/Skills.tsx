@@ -1,4 +1,4 @@
-import "/src/styles/Skills.css";
+import "./styles/Skills.css";
 import ProjectDisplay from "./projectDisplay.tsx";
 
 function Skills() {

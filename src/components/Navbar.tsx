@@ -1,4 +1,4 @@
-import "/src/styles/Navbar.css";
+import "./styles/Navbar.css";
 
 interface Props {
   theme: string;

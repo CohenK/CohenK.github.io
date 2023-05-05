@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar.tsx";
 import { createContext } from "react";
 import useLocalStorage from "use-local-storage";
-import "/src/styles/App.css";
+import "./styles/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./components/Home.tsx";
 import About from "./components/About.tsx";
