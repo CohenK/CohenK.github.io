@@ -26,13 +26,13 @@ function App() {
   let Component;
   switch (window.location.pathname) {
     case "/":
-      Component = <About />;
+      Component = <Skills />;
       break;
     case "/about":
-      Component = <Home />;
+      Component = <About />;
       break;
     case "/skillsandprojects":
-      Component = <Skills />;
+      Component = <Home />;
       break;
     case "/resources":
       Component = <Resources />;
