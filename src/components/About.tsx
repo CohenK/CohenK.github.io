@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/About.css";
+import tree from "/assets/tree.jpg";
 
 function About() {
   let hobbies: [string, string][] = [
@@ -36,7 +37,7 @@ function About() {
   let imagesc1: string[] = [
     "../assets/tree.jpg",
     "/src/assets/blade2.png",
-    "/CohenK.github.io/src/assets/camping2.png",
+    "/src/assets/camping2.png",
   ];
   let imagesc2: string[] = [
     "src/assets/OrigamiSwan.jpg",
@@ -117,6 +118,7 @@ function About() {
         the field of Analytical Mathematics, I am very much interested in all
         fields Computer Science.
       </p>
+      <img src={tree}/>
       <img className="myPicture" src="..\assets\me.jpg" />
       {/*hobby pics section */}
 
