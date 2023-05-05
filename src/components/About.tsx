@@ -34,7 +34,7 @@ function About() {
   ];
 
   let imagesc1: string[] = [
-    "../assets/tree.jpg",
+    "https://github.com/CohenK/CohenK.github.io/tree/main/src/assets/tree.jpg",
     "/src/assets/blade2.png",
     "src/assets/camping2.png",
   ];
