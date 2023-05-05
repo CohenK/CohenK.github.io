@@ -7,7 +7,7 @@
   --accent2: #f4994e;
   --vertical-margin: 240px;
   --default-font-size: 40px;
-  --bottomLink: url("src/assets/waveWhiteBG.svg");
+  --bottomLink: url("public/assets/waveWhiteBG.svg");
 }
 
 [data-theme="dark"] {
@@ -17,7 +17,7 @@
   --text-secondary: white;
   --accent: rgb(47, 177, 177);
   --accent2: #f4994e;
-  --bottomLink: url("src/assets/waveTransparentBG.svg");
+  --bottomLink: url("public/assets/waveTransparentBG.svg");
 }
 
 .app {
@@ -102,7 +102,7 @@
 }
 
 .layer {
-  background-image: url("src/assets/waveTransparentBG.svg");
+  background-image: url("public/assets/waveTransparentBG.svg");
 }
 
 @keyframes BottomfadeIn {

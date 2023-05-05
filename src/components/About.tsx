@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import tree from "../assets/tree.jpg";
+
 
 function About() {
   let hobbies: [string, string][] = [
@@ -34,25 +34,25 @@ function About() {
     ],
   ];
 
-  let imagesc1: string[] = [
-    "../assets/tree.jpg",
-    "/src/assets/blade2.png",
-    "/src/assets/camping2.png",
+  let imagesc1 = [
+    "/public/assets/tree.jpg",
+    "/public/assets/blade2.png",
+    "/public/assets/camping2.png",
   ];
   let imagesc2: string[] = [
-    "src/assets/OrigamiSwan.jpg",
-    "src/assets/meSitting2.jpg",
-    "src/assets/camping1.png",
+    "/public/assets/OrigamiSwan.jpg",
+    "/public/assets/meSitting2.jpg",
+    "/public/assets/camping1.png",
   ];
   let imagesc3: string[] = [
-    "src/assets/me on bike.jpg",
-    "src/assets/lake.jpg",
-    "src/assets/yosemite.JPG",
+    "/public/assets/me on bike.jpg",
+    "/public/assets/lake.jpg",
+    "/public/assets/yosemite.JPG",
   ];
   let imagesc4: string[] = [
-    "src/assets/unicorn.jpg",
-    "src/assets/bladeAlt.png",
-    "src/assets/flowers.png",
+    "/public/assets/unicorn.jpg",
+    "/public/assets/bladeAlt.png",
+    "/public/assets/flowers.png",
   ];
 
   React.useEffect(() => {
@@ -118,7 +118,6 @@ function About() {
         the field of Analytical Mathematics, I am very much interested in all
         fields Computer Science.
       </p>
-      <img src={tree}/>
       <img className="myPicture" src="..\assets\me.jpg" />
       {/*hobby pics section */}
 

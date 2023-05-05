@@ -1,46 +1,46 @@
-import "../styles/Skills.css";
+import "./styles/Skills.css";
 import ProjectDisplay from "./projectDisplay.tsx";
 
 function Skills() {
   let skills: [string, string][] = [
-    ["HTML", "src/assets/HTML.png"],
-    ["CSS", "src/assets/CSS.png"],
-    ["Python", "src/assets/Python.png"],
-    ["C++", "src/assets/C++.png"],
-    ["C#", "src/assets/Csharp.png"],
-    ["Unity", "src/assets/Unity.png"],
-    ["Javascript", "src/assets/Javascript.png"],
-    ["React", "src/assets/React.png"],
-    ["Typescript", "src/assets/Typescript.png"],
-    ["Node", "src/assets/node.png"],
-    ["Matlab", "src/assets/Matlab.png"],
-    ["MySQL", "src/assets/SQL.png"],
+    ["HTML", "public/assets/HTML.png"],
+    ["CSS", "public/assets/CSS.png"],
+    ["Python", "public/assets/Python.png"],
+    ["C++", "public/assets/C++.png"],
+    ["C#", "public/assets/Csharp.png"],
+    ["Unity", "public/assets/Unity.png"],
+    ["Javascript", "public/assets/Javascript.png"],
+    ["React", "public/assets/React.png"],
+    ["Typescript", "public/assets/Typescript.png"],
+    ["Node", "public/assets/node.png"],
+    ["Matlab", "public/assets/Matlab.png"],
+    ["MySQL", "public/assets/SQL.png"],
   ];
   let projects: [string, string, [string, string?][]?][] = [
     [
       "MyPasswordManager",
       "A simplistic accounts manager that needs no access to the internet written in Python. Like most people I did not want the hassle of having multiple passwords for different sites and writing them on the piece of paper. At the same time I fear the day where the only password I have will be exposed, so I needed a password manager similar to the popular app LastPass. The issue was I didn't want to pay anything and with all the cyber security issues this past decade I didn't want to have anymore of my data on the internet, so I made use of what I learned and wrote an app that does what I need it to do.",
       [
-        ["Custom GUI", "src/assets/Projects/GUI.png"],
+        ["Custom GUI", "public/assets/Projects/GUI.png"],
         [
           "Custom Randomized Password Generator",
-          "src/assets/Projects/password generator.png",
+          "public/assets/Projects/password generator.png",
         ],
         [
           "Built in querying for searches based on username/email",
-          "src/assets/Projects/Search.png",
+          "public/assets/Projects/Search.png",
         ],
         [
           "Local data storage on your computer",
-          "src/assets/Projects/local storage.png",
+          "public/assets/Projects/local storage.png",
         ],
         [
           "Multiple profiles supported",
-          "src/assets/Projects/multiple users.png",
+          "public/assets/Projects/multiple users.png",
         ],
         [
           "Data Encryption via python's cryptography library",
-          "src/assets/Projects/encryption.png",
+          "public/assets/Projects/encryption.png",
         ],
       ],
     ],
@@ -50,15 +50,15 @@ function Skills() {
       [
         [
           "Random object instantiation",
-          "src/assets/Projects/random object instantiation.png",
+          "public/assets/Projects/random object instantiation.png",
         ],
         [
           "Unit collision detection",
-          "src/assets/Projects/collision detection.png",
+          "public/assets/Projects/collision detection.png",
         ],
         [
           "Custom texturing and 3D modelling",
-          "src/assets/Projects/texturing.png",
+          "public/assets/Projects/texturing.png",
         ],
       ],
     ],
@@ -77,10 +77,10 @@ function Skills() {
       "This website",
       "This is my take on a modern portfolio website!",
       [
-        ["Light and Dark mode", "src/assets/LightDarkMode.gif"],
+        ["Light and Dark mode", "public/assets/LightDarkMode.gif"],
         ["Reusable react components"],
-        ["Multiple page routing", "src/assets/PageRouting.gif"],
-        ["Custom animations", "src/assets/customAnimation.gif"],
+        ["Multiple page routing", "public/assets/PageRouting.gif"],
+        ["Custom animations", "public/assets/customAnimation.gif"],
         ["Dynamic rendering"],
       ],
     ],
