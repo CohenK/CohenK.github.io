@@ -98,11 +98,11 @@
   background-position: center;
   background-size: cover;
   z-index: 3000;
-  animation: BottomfadeIn 1.7s 1.7s ease-in-out both;
+  animation: BottomfadeIn 1.5s 1s ease-in-out both;
 }
 
 .layer {
-  background-image: url("public/assets/waveTransparentBG.svg");
+  background-image: url("/assets/waveTransparentBG.svg");
 }
 
 @keyframes BottomfadeIn {

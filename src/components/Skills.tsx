@@ -1,5 +1,5 @@
 import "../styles/Skills.css";
-import ProjectDisplay from "./projectDisplay.tsx";
+import ProjectDisplay from "./projectDisplay";
 
 function Skills() {
   let skills: [string, string][] = [

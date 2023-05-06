@@ -21,7 +21,7 @@
   margin: 5px;
   font-size: 1.5vw;
   opacity: 0;
-  animation: fadeInLeftR 1.5s ease-in-out 1s both;
+  animation: fadeInLeftR 1.5s ease-in-out both;
 }
 
 .ResourcesPage .resourceListLink:link,

@@ -15,16 +15,16 @@ function Navbar({ theme, handleClick }: Props) {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about">About Me</a>
+            <a href="/about/">About Me</a>
           </li>
           <li>
-            <a href="/skillsandprojects">Skills/Projects</a>
+            <a href="/skills/">Skills/Projects</a>
           </li>
           <li>
-            <a href="/resources">Resources</a>
+            <a href="/resources/">Resources</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/contact/">Contact</a>
           </li>
         </ul>
       </nav>

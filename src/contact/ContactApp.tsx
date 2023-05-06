@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar.tsx";
+import Navbar from "../components/Navbar.js";
 import { createContext } from "react";
 import useLocalStorage from "use-local-storage";
-import "./styles/App.css";
+import "../styles/App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "./components/Home.tsx";
+import Contact from "../components/Contact.tsx";
 
 
 export const ThemeContext = createContext("light");
@@ -27,9 +27,9 @@ function App() {
         <Navbar theme={theme} handleClick={switchTheme} />
       </div>
       <div className="main">
-        <div className="AltLeft"></div>
-        <div className="Middle"> <Home/></div>
-        <div className="AltRight"></div>
+        <div className="Left"></div>
+        <div className="Middle"> <Contact/></div>
+        <div className="Right"></div>
       </div>
     </div>
   );

@@ -118,7 +118,7 @@ function About() {
         the field of Analytical Mathematics, I am very much interested in all
         fields Computer Science.
       </p>
-      <img className="myPicture" src="..\assets\me.jpg" />
+      <img className="myPicture" src="\assets\me.jpg" />
       {/*hobby pics section */}
 
       <div className="before transitionTop layerTop"></div>

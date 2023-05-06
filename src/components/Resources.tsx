@@ -5,25 +5,25 @@ let resourceList: [string, string, string, string][] = [
     "LinkedIn:",
     "https://www.linkedin.com/in/haoxiankang/",
     "Add me!",
-    "src/assets/linkedIn.png",
+    "/assets/linkedIn.png",
   ],
   [
     "Github:",
     "https://github.com/CohenK",
     "Let's collab!",
-    "src/assets/github-mark.png",
+    "/assets/github-mark.png",
   ],
   [
     "Resume:",
     "https://docs.google.com/document/d/1FC_khZLHGMQEIDvxo2p9lfIG2M15zLC1/edit?usp=sharing&ouid=101433293086238194766&rtpof=true&sd=true",
     "Copy of my resume on Google Drive",
-    "src/assets/resume.png",
+    "/assets/resume.png",
   ],
   [
     "Email:",
     "mailto:kangcohen@gmail.com",
     "kangcohen@gmail.com",
-    "src/assets/gmail.png",
+    "/assets/gmail.png",
   ],
 ];
 
