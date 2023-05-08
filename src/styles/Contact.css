@@ -78,6 +78,6 @@
 }
 
 .ContactPage .button:hover {
-  background-color: var(--accent);
+  background-color: var(--accent1);
   border: none;
 }

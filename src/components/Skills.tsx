@@ -34,10 +34,7 @@ function Skills() {
           "Local data storage on your computer",
           "/assets/Projects/local storage.png",
         ],
-        [
-          "Multiple profiles supported",
-          "/assets/Projects/multiple users.png",
-        ],
+        ["Multiple profiles supported", "/assets/Projects/multiple users.png"],
         [
           "Data Encryption via python's cryptography library",
           "/assets/Projects/encryption.png",
@@ -56,10 +53,7 @@ function Skills() {
           "Unit collision detection",
           "/assets/Projects/collision detection.png",
         ],
-        [
-          "Custom texturing and 3D modelling",
-          "/assets/Projects/texturing.png",
-        ],
+        ["Custom texturing and 3D modelling", "/assets/Projects/texturing.png"],
       ],
     ],
     [
