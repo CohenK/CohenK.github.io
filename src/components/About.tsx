@@ -189,7 +189,7 @@ function About() {
         <CascadeWaves />
       </div>
       <p className="hobbies">
-        Whenever i'm not working on projects you can find me pursuing a mix of:
+        Whenever I'm not working on projects you can find me pursuing a mix of:
       </p>
       <ul className="list" id="list">
         {hobbies.map((item) => {
