@@ -9,21 +9,19 @@ function Contact() {
         method="POST"
       >
         <div className="top">
-          <input
-            className="subject"
-            id="subject"
-            type="text"
-            name="_subject"
-            placeholder="subject"
-            required
-          />
-          <input
-            className="email"
-            id="email"
-            type="email"
-            name="email"
-            placeholder="your email (optional)"
-          />
+          <div className="subject">
+            <p>subject:</p>
+            <input id="subject" type="text" name="_subject" required />
+          </div>
+          <div className="email">
+            <p>your email:</p>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="(optional)"
+            />
+          </div>
         </div>
 
         <textarea

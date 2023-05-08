@@ -1,7 +1,16 @@
 .ResourcesPage {
   transition: color 0.6s;
   color: var(--text-primary);
+  margin-bottom: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
 }
+/* .ResourcesPage .resource {
+  scroll-snap-align: start;
+} */
 
 .ResourcesPage p {
   text-align: center;
@@ -10,15 +19,18 @@
 }
 
 .ResourcesPage .resourcesTitle {
-  font-size: 2vw;
+  font-family: Abril;
+  font-size: 2em;
   margin-bottom: 3vh;
   animation: fadeIn 1.5s ease-in-out;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
 }
 
 .ResourcesPage .resourceListItem {
   display: flex;
   padding-left: 4vw;
-  margin: 5px;
+  margin: 0 0 5vh 0;
   font-size: 1.5vw;
   opacity: 0;
   animation: fadeInLeftR 1.5s ease-in-out both;
@@ -26,7 +38,7 @@
 
 .ResourcesPage .resourceListLink:link,
 .resourceListLink:visited {
-  color: var(--accent);
+  color: var(--accent1);
   text-decoration: none;
   padding-left: 1vw;
 }
@@ -36,6 +48,13 @@
 
 .ResourcesPage .itemName {
   width: 7vw;
+  font-family: Quattrocentro;
+  font-weight: 700;
+}
+.ResourcesPage .actualLink {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .ResourcesPage .resourceIcon {
@@ -49,6 +68,12 @@
   width: 4vw;
 }
 
+.ResourcesPage .alternateOption {
+  margin-top: 28vh;
+  animation: fadeIn 1.5s 2.3s ease-in-out both, jump 0.7s infinite alternate;
+  font-family: Abril;
+}
+
 @keyframes fadeInLeftR {
   0% {
     transition: all 0.8s;
@@ -59,6 +84,50 @@
   100% {
     transform: translateX(0);
     filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes jump {
+  0% {
+    transition: all 0.8s;
+    transform: translatey(0);
+  }
+  100% {
+    transform: translatey(-50%);
+  }
+}
+
+.bottomEdge {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  animation: BottomfadeIn 1.5s 1s ease-in-out both;
+}
+
+.bottomEdge svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+}
+
+.bottomEdge .shape-fill {
+  fill: var(--accent1);
+}
+
+@keyframes BottomfadeIn {
+  0% {
+    transform: all 0.6;
+    filter: blur(5px);
+    transform: rotate(180deg) translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    transform: rotate(180deg) translateY(0);
     opacity: 1;
   }
 }

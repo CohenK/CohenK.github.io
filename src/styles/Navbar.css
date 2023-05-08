@@ -4,10 +4,11 @@
   grid-template-columns: 1fr 5fr 1fr;
   background-color: var(--background-secondary);
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   right: 20px;
+  font-family: Abril;
 }
 
 .nav {
@@ -28,7 +29,7 @@
   text-decoration: none;
 }
 .nav a:hover {
-  color: var(--accent);
+  color: var(--accent3);
 }
 .nav a:link:visited:hover:active {
   text-decoration: none;
@@ -51,10 +52,10 @@
   transition: all 0.5s;
 }
 .navbar-container button:hover {
-  color: var(--accent);
+  color: var(--accent3);
   border: solid;
   border-width: 1px;
-  border-color: var(--accent);
+  border-color: var(--accent3);
 }
 @media (max-width: 1600px) {
   .nav ul {

@@ -1,0 +1,59 @@
+.waves .svg1 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.waves .path1 {
+  transition: fill 0.6s;
+  fill: var(--accent1);
+  fill-opacity: 0.8;
+}
+.waves .svg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.waves .path2 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT1);
+  fill-opacity: 0.9;
+}
+.waves .svg3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.waves .path3 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT2);
+  fill-opacity: 1;
+}
+.waves .svg4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+}
+.waves .path4 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT3);
+  fill-opacity: 0.8;
+}
+.waves .svg5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.waves .path5 {
+  transition: fill 0.6s;
+  fill: var(--accent3);
+  fill-opacity: 1;
+}

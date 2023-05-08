@@ -20,9 +20,9 @@ function Navbar({ theme, handleClick }: Props) {
           <li>
             <a href="/skills/">Skills/Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="/resources/">Resources</a>
-          </li>
+          </li> */}
           <li>
             <a href="/contact/">Contact</a>
           </li>

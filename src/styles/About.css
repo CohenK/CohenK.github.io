@@ -4,15 +4,23 @@
   padding-bottom: 30px;
 }
 
-.AboutPage p {
-  font-size: 30px;
+.AboutPage .aboutTitle {
+  font-family: Abril;
+  font-size: 2em;
+  margin-bottom: 3vh;
+  animation: fadeIn 1.5s ease-in-out;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .AboutPage .intro {
   padding: 0 150px 50px 150px;
   text-align: center;
   opacity: 0;
-  animation: fadeIn 0.5s ease-in-out both;
+  animation: fadeIn 1s 1.5s ease-in-out both;
+  font-family: Quattrocentro;
+  font-size: 2em;
 }
 .AboutPage .hobbies {
   font-size: 3vw;
@@ -21,13 +29,8 @@
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out both;
   margin: 0;
-}
-.AboutPage .hobbies2 {
-  text-align: center;
-  padding: 0 150px 50px 150px;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out both;
-  margin: 0;
+  font-family: Quattrocentro;
+  font-weight: 400;
 }
 
 .AboutPage .list {
@@ -42,23 +45,35 @@
 .AboutPage .myPicture {
   display: block;
   margin: 0 auto 5vh auto;
-  width: 60%;
-  animation: popIn 1s ease-in-out both;
+  width: 40%;
+  animation: fadeIn 1.5s 2.5s ease-in-out both;
 }
 .AboutPage .hobby {
-  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0;
   width: 100%;
 }
 .AboutPage .more {
-  font-size: 1vw;
+  font-size: 1.5vw;
   margin: 0;
   padding: 5px 0 0 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+.AboutPage .hobbyName {
+  text-align: end;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0.5vh 3vw 0 0;
 }
 
 .AboutPage .pics {
   display: flex;
   padding: 20px;
-  background-color: var(--accent2);
+  background-color: var(--accent3);
 }
 
 .AboutPage .column {
@@ -84,36 +99,11 @@
   transform: scale(1, 1);
 }
 
-.AboutPage .transitionTop {
-  position: relative;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  aspect-ratio: 1357.93/200;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .AboutPage .layerTop {
-  background-image: url("/assets/blueOrangeTransition.svg");
-}
-
-.AboutPage .transitionBot {
-  position: relative;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  aspect-ratio: 1357.93/200;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /* background-image: url("/assets/blueOrangeTransition.svg"); */
 }
 
 .AboutPage .layerBot {
-  background-image: url("/assets/blueOrangeTransition1.svg");
 }
 
 .before {
@@ -132,14 +122,23 @@
   transition: all 2s;
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(-50%);
+  transform: rotate(180deg) translateY(50%);
 }
 .after2 {
   opacity: 1;
   filter: blur(0);
-  transform: translateY(0);
+  transform: rotate(180deg) translateY(0);
 }
 
+.before3 {
+  transition: all 2s;
+  opacity: 0;
+  filter: blur(5px);
+}
+.after3 {
+  opacity: 1;
+  filter: blur(0);
+}
 
 @keyframes popIn {
   0% {
