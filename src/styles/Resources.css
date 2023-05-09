@@ -69,9 +69,10 @@
 }
 
 .ResourcesPage .alternateOption {
-  margin-top: 28vh;
-  animation: fadeIn 1.5s 2.3s ease-in-out both, jump 0.7s infinite alternate;
+  margin-top: 10vh;
+  animation: fadeIn 1.5s 5.7s ease-in-out both, jump 0.7s infinite alternate;
   font-family: Abril;
+  margin-bottom: 18vh;
 }
 
 @keyframes fadeInLeftR {
@@ -102,12 +103,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  animation: BottomfadeIn 1.5s 1s ease-in-out both;
+  /* animation: BottomfadeIn 1.5s 1s ease-in-out both; */
 }
 
-.bottomEdge svg {
+/* .bottomEdge svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -116,9 +115,9 @@
 
 .bottomEdge .shape-fill {
   fill: var(--accent1);
-}
+} */
 
-@keyframes BottomfadeIn {
+/* @keyframes BottomfadeIn {
   0% {
     transform: all 0.6;
     filter: blur(5px);
@@ -130,4 +129,4 @@
     transform: rotate(180deg) translateY(0);
     opacity: 1;
   }
-}
+} */

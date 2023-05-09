@@ -1,12 +1,20 @@
 .HomePage {
   transition: color 0.6s;
   color: var(--text-primary);
-  height: calc(100vh - 99px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }
-
+.HomePage .text {
+  padding-top: 3em;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+.HomePage p {
+  padding: 0;
+  margin: 0;
+  font-family: Quattrocentro;
+  font-weight: 400;
+}
 .HomePage .greeting {
   padding: 0 0 70px 0;
   font-size: 4vw;
@@ -15,17 +23,8 @@
   letter-spacing: 0.3em;
   font-family: Merriweather;
   font-weight: 700;
+  z-index: 2;
 }
-
-.HomePage p {
-  text-align: center;
-  display: block;
-  padding: 0;
-  margin: 0;
-  font-family: Quattrocentro;
-  font-weight: 400;
-}
-
 .HomePage .details {
   font-size: 2vw;
   padding: 0 150px 0 150px;
@@ -60,6 +59,100 @@
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 2;
   animation: fadeIn 1.5s 1.8s ease-in-out both;
   opacity: 0;
+}
+
+.HomePage .parallax {
+  pointer-events: none;
+  transition: cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+.HomePage svg {
+  overflow: visible;
+}
+
+.HomePage .svg1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  /* opacity: 0;
+  animation: bottomFadeIn 1s 1.75s ease-in-out both; */
+}
+.HomePage .path1 {
+  transition: fill 0.6s;
+  fill: var(--accent1);
+  fill-opacity: 1;
+}
+.HomePage .svg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0;
+  animation: bottomFadeIn 1s 2.5s ease-in-out both; */
+  z-index: 3;
+}
+.HomePage .path2 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT1);
+  fill-opacity: 0.9;
+}
+.HomePage .svg3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0;
+  animation: bottomFadeIn 1s 3.25s ease-in-out both; */
+  z-index: 5;
+}
+.HomePage .path3 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT2);
+  fill-opacity: 1;
+}
+.HomePage .svg4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0;
+  animation: bottomFadeIn 1s 4s ease-in-out both; */
+  z-index: 7;
+}
+.HomePage .path4 {
+  transition: fill 0.6s;
+  fill: var(--primaryAccentT3);
+  fill-opacity: 0.8;
+}
+.HomePage .svg5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0;
+  animation: bottomFadeIn 1s 4.75s ease-in-out both; */
+  z-index: 9;
+}
+.HomePage .path5 {
+  transition: fill 0.6s;
+  fill: var(--accent3);
+  fill-opacity: 1;
+}
+
+@keyframes bottomFadeIn {
+  0% {
+    transform: translateY(20%);
+    filter: blur(3px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }

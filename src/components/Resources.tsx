@@ -1,5 +1,6 @@
 import "../styles/Resources.css";
 import Contact from "./Contact.tsx";
+import AnimatedCascadeWaves from "./animatedCascadeWaves.tsx";
 
 let resourceList: [string, string, string, string][] = [
   [
@@ -81,9 +82,8 @@ function Resources() {
         <Contact />
       </section>
 
-      {/* <div className="bottomEdge layer"> */}
       <div className="bottomEdge layer">
-        <svg
+        {/* <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -103,8 +103,8 @@ function Resources() {
             d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
             className="shape-fill"
           ></path>
-        </svg>
-        {/* </div> */}
+        </svg> */}
+        <AnimatedCascadeWaves />
       </div>
     </section>
   );

@@ -56,7 +56,7 @@
 }
 
 .ContactPage .message {
-  height: 60vh;
+  height: 38vh;
   background-color: inherit;
   color: var(--text-primary);
   border: none;

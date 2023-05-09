@@ -92,7 +92,7 @@
   top: 99px;
   left: 0;
   width: 13vw;
-  height: 74vh;
+  height: 53vh;
   border-right: solid 1px gray;
 }
 .AltRight {
@@ -102,27 +102,23 @@
   top: 99px;
   right: 0;
   width: 13vw;
-  height: 74vh;
+  height: 53vh;
   border-left: solid 1px gray;
 }
 
 .HomeLeft {
   position: fixed;
   background-color: inherit;
-  z-index: 2000;
   top: 99px;
   left: 0;
   width: 13vw;
-  height: 54vh;
-  border-right: solid 1px gray;
+  border-right: none;
 }
 .HomeRight {
   position: fixed;
   background-color: inherit;
-  z-index: 2000;
   top: 99px;
   right: 0;
   width: 13vw;
-  height: 54vh;
-  border-left: solid 1px gray;
+  border-left: none;
 }
