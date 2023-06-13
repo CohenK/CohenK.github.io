@@ -71,10 +71,10 @@ function Skills() {
       "This website",
       "This is my take on a modern portfolio website!",
       [
-        ["Light and Dark mode", "/assets/LightDarkMode.gif"],
+        ["Light and Dark mode", "/assets/LightDarkTheme.gif"],
         ["Reusable react components"],
-        ["Multiple page routing", "/assets/PageRouting.gif"],
-        ["Custom animations", "/assets/customAnimation.gif"],
+        ["Multiple page routing"],
+        ["Custom animations", "/assets/Animations.gif"],
         ["Dynamic rendering"],
       ],
     ],
