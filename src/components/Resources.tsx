@@ -17,7 +17,7 @@ let resourceList: [string, string, string, string][] = [
   ],
   [
     "Resume:",
-    "https://docs.google.com/document/d/1FC_khZLHGMQEIDvxo2p9lfIG2M15zLC1/edit?usp=sharing&ouid=101433293086238194766&rtpof=true&sd=true",
+    "https://drive.google.com/file/d/1JQEKkhX9YYC0Hm_VZ4FHreM3IJ7x0zEP/view?usp=drive_link",
     "Copy of my resume on Google Drive",
     "/assets/resume.png",
   ],
