@@ -30,7 +30,7 @@ jobs:
         with:
           name: production-files
           path: ./dist
-
+  
   deploy:
     name: Deploy
     needs: build
@@ -46,3 +46,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
+      
+      - name: Show current directory
+        run: pwd
