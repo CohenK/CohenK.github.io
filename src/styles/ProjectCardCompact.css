@@ -1,0 +1,67 @@
+.projectCardCompact{
+    transition: color 0.8s;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.projectCardCompact .projectThumbnail{
+    object-fit: fill;
+    width: 100%;
+    min-height: 35%;
+    height: auto;
+    margin-bottom: 1vh;
+    border-radius: 20px;
+}
+
+.projectCardCompact .projectName{
+    margin: 0 0 0 2vw;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.projectCardCompact .projectDescription{
+    margin: 0 2vw 3vh 2vw;
+    font-size: 1em;
+    text-align: justify;
+    min-height: 30%;
+}
+
+.projectCardCompact .tagContainer{
+    margin: 0 2vw 1vh 2vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vw;
+}
+
+.projectCardCompact .tagItem{
+    text-align: center;
+    background-color: var(--primaryAccent); 
+    list-style: none;
+    border: solid rgb(46, 44, 44);
+    max-width: 15vw;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color: var(--text-primary);
+}
+
+.projectCardCompact .projectLinkBox{
+    text-align: center;
+    background-color: var(--background-secondary);
+    border: solid rgb(46, 44, 44);
+    width: 40%;
+    padding: 0.25rem 0 0.25rem 0;
+    margin: 1rem 2vw 0 2vw;
+}
+.projectCardCompact .projectLinkBox:hover{
+    border-color: var(--text-primary);
+    color: var(--text-secondary);
+}
+
+.projectCardCompact .projectLink{
+    text-decoration: none;
+    color: var(--text-accent);
+}

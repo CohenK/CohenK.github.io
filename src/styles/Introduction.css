@@ -1,0 +1,136 @@
+.Introduction {
+    position: relative;
+    transition: color 0.8s;
+    color: var(--text-primary);
+    min-height: 100vh;
+    scroll-snap-align: start;
+    font-family: Quattrocento;
+}
+
+.Introduction .heroBackground{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 81vw;
+    height: 50vh;
+    top: 23vh;
+    left: 0;
+    background-color: var(--background-thirtiary);
+    opacity: 0;
+    animation: slideLeft 1s forwards ease-in-out;
+    border-radius: 20px;
+}
+.Introduction .pictureBackground{
+    flex: 1 0 auto;
+    opacity: 0;
+    animation: slideDown 1s forwards ease-in-out;
+    z-index: 1;
+}
+.Introduction .myPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 23vw;
+    height: auto;
+    border-radius: 50%;
+    scale: 1.5;
+    opacity: 0; 
+    animation: popOut 1s 1s forwards ease-in-out;
+}
+.Introduction .heroText{
+    flex: 1 0 auto;
+}
+.Introduction .introText{
+    font-size: 2.5vw;
+    margin: 0;
+    opacity: 0;
+    animation: slideLeft 0.75s 1s forwards ease-in-out;
+    top: 5vh;
+    left: 45%;
+}
+.Introduction .callToAction{
+    font-size: 2vw;
+    color: var(--primaryAccent);
+}
+.Introduction .quoteFirst{
+    position: absolute;
+    font-size: 3.5vw;
+    top: 0vh;
+    left: 40vw;
+    color: var(--primaryAccent);
+    opacity: 0.3;
+    animation: none;
+}
+.Introduction .quoteSecond{
+    position: absolute;
+    font-size: 3.5vw;
+    top: 85vh;
+    left: 0vw;
+    color: var(--primaryAccent);
+    opacity: 0.3;
+    animation: none;
+}
+
+span{
+    color: var(--text-accent);
+    font-weight: bold;
+    font-size: 3.5vw;
+    font-style:oblique;
+}
+
+.greeting {
+    font-size: 12vw;
+}
+
+@keyframes popOut{
+    0% { transform: scale(0); opacity: 0;}
+    90%{ transform: scale(1.1); opacity: 1;}
+    95%{ transform: scale(0.95); opacity: 1;}
+    100%{transform: scale(1); opacity: 1;}
+}
+
+@keyframes slideLeft{
+    0% { transform: translateX(5vw);}
+    100% { transform: translateX(0); opacity: 1;}
+}
+@keyframes slideDown{
+    0% { transform: translateY(-50%); opacity: 1;}
+    100% { transform: translateY(0); opacity: 1;}
+}
+@keyframes slideUp{
+    0% { transform: translateY(50%); opacity: 0;}
+    100% { transform: translateY(0); opacity: 1;}
+}
+
+@media (max-width: 800px){   
+    .Introduction .heroBackground{
+        flex-direction: column;
+        width: 70%;
+        top: 10%;
+        left: 15%;
+        height: 70vh;
+    }
+    .Introduction .myPicture{
+        scale: 1;
+        margin-top: 5vh;
+    }
+    .Introduction .introText{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .Introduction span{
+        font-size: 5vw;
+    }
+    .Introduction .callToAction{
+        font-size: 3vw;
+        top: 60%;
+    }
+    .Introduction .quoteFirst{
+        top: 0vh;
+        left: 38vw;
+    }
+    .Introduction .quoteSecond{
+        top: 85vh;
+        left: 0vw;
+    }
+}

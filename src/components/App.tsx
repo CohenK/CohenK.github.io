@@ -1,69 +1,87 @@
-import Navbar from "./Navbar.js";
-import { createContext } from "react";
+import { createContext, useState, useRef, useEffect } from "react";
 import useLocalStorage from "use-local-storage";
 import "../styles/App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "../components/Home.tsx";
-import About from "../components/About.tsx";
-import Skills from "../components/Skills.tsx";
-import Resources from "../components/Resources.tsx";
+import Navbar from "./Navbar.tsx";
+import Introduction from "./Introduction.tsx";
+import Skills from "./Skills.tsx";
+import Projects from "./Projects.tsx";
+import About from "./About.tsx";
+import Resources from "./Resources.tsx";
 
 export const ThemeContext = createContext("light");
 
-interface Props {
-  page: string;
-}
-
-function App({ page }: Props) {
+const App:React.FC = () => {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  //needed to declare typing so that event listener can be attached
+  const appRef = useRef<HTMLDivElement|null>(null);
+  const introRef = useRef<HTMLElement|null>(null);
+  const skillRef = useRef<HTMLElement|null>(null);
+  const projectRef = useRef<HTMLElement|null>(null);
+  const aboutRef = useRef<HTMLElement|null>(null);
+  const sections = ['Intro','Skills','Projects','About'];
+  const [activeComponent, setActiveComponent] = useState('');
+
+  useEffect(()=>{
+    const sectionRefs = [introRef, skillRef, projectRef, aboutRef]
+    const observer = new IntersectionObserver(
+      (sections)=>{
+        sections.forEach((section) => {
+          if (section.isIntersecting){
+            setActiveComponent(section.target.id)
+          }
+        })
+      },
+      {threshold: 0.2})
+
+    sectionRefs.forEach((section) =>{
+      if (section.current){
+        observer.observe(section.current);
+      }
+    });
+
+    return () => {
+      sectionRefs.forEach((section) => {
+        if (section.current) {
+          observer.unobserve(section.current);
+        }
+      });
+    };
+  },[])
+
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
   );
 
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-  let Component;
-  switch (page) {
-    case "home":
-      Component = <Home />;
-      break;
-    case "about":
-      Component = <About />;
-      break;
-    case "skills":
-      Component = <Skills />;
-      break;
-    case "contact":
-      Component = <Resources />;
-      break;
+  const onNavigate = (component:string) => {
+    document.getElementById(component)!.scrollIntoView({block: 'start'});
   }
 
+  const switchTheme = () => {
+    const newTheme = (theme === "light") ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   return (
-    <div className="app" data-theme={theme}>
-      <div className="top-container">
-        <Navbar theme={theme} handleClick={switchTheme} />
+    <>
+      {/* <EnterScreen enterClicked={enterClicked} handleClick={handleClick}/> */}
+      <div className="app" ref={appRef} data-theme={theme}>
+        <div className="nav">
+          <Navbar sections={sections} activeComponent={activeComponent} onNavigate={onNavigate} switchTheme={switchTheme} theme={theme}/>
+        </div>
+        <div className="content">
+          <Introduction ref={introRef} id='Intro'/>
+          <Skills ref={skillRef} activeComponent={activeComponent} id='Skills'/>
+          <Projects ref={projectRef} id="Projects"/>
+          <About ref={aboutRef} id='About'/>
+        </div>
+        <div className="links">
+          <Resources id='Links'/>
+        </div>
       </div>
-      <div className="main">
-        {page === "contact" ? (
-          <div className="AltLeft"></div>
-        ) : page === "home" ? (
-          <div className="HomeLeft"></div>
-        ) : (
-          <div className="Left"></div>
-        )}
-        <div className="Middle">{Component}</div>
-        {page === "contact" ? (
-          <div className="AltRight"></div>
-        ) : page === "home" ? (
-          <div className="HomeRight"></div>
-        ) : (
-          <div className="Right"></div>
-        )}
-      </div>
-    </div>
+    </>
+
   );
 }
 

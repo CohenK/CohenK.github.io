@@ -1,0 +1,53 @@
+.projects{
+    transition: color 0.8s;
+    margin-bottom: 10vh;
+    font-family: Mulish;
+}
+
+.projects .projectTitle{
+    font-size: 3vw;
+    font-family: Quattrocento;
+    font-weight: 700;
+    font-style: bold;
+    text-align: center;
+    letter-spacing: 0.2em;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 4rem;
+}
+
+.projects .projectList{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .projectCard{
+    width: 85%;
+    height: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.projects .projectCardCompact{
+    width: 100%;
+    height: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.projects .allProjectsLink{
+    font-size: 1vw;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 15vw;
+    text-align: center;
+    border: solid 1px var(--text-primary);
+    border-radius: 10px;
+}
+
+.projects .allProjectsLink:hover{
+    background-color: var(--background-secondary);
+}

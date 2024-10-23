@@ -1,11 +1,13 @@
 .AboutPage {
-  transition: color 0.6s;
+  transition: color 0.8s;
   color: var(--text-primary);
-  padding-bottom: 30px;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  font-family: Mulish;
 }
 
 .AboutPage .aboutTitle {
-  font-family: Abril;
+  font-family: Quattrocentro;
   font-size: 2em;
   margin-bottom: 3vh;
   animation: fadeIn 1.5s ease-in-out;
@@ -14,12 +16,16 @@
   text-align: center;
 }
 
+.AboutPage .aboutMe{
+  text-align: justify;
+  font-size: 1.5em;
+}
+
 .AboutPage .intro {
   padding: 0 150px 50px 150px;
   text-align: center;
   opacity: 0;
   animation: fadeIn 1s 1.5s ease-in-out both;
-  font-family: Quattrocentro;
   font-size: 2em;
 }
 .AboutPage .hobbies {
@@ -33,7 +39,7 @@
   font-weight: 400;
 }
 
-.AboutPage .list {
+.AboutPage .hobbyList {
   padding-left: 3vw;
   padding-right: 3vw;
   font-size: 30px;
@@ -42,27 +48,49 @@
   margin: 0;
 }
 
-.AboutPage .myPicture {
-  display: block;
-  margin: 0 auto 5vh auto;
-  width: 40%;
-  animation: fadeIn 1.5s 2.5s ease-in-out both;
+.AboutPage .hobbyContainer {
+  width: 100%;
+  background-color: var(--background-thirtiary);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.AboutPage .hobby {
+.AboutPage .hobbyImg{
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  z-index: 1;
+}
+.AboutPage .left{
+  text-align: left;
+}
+.AboutPage .right{
+  text-align: right;
+}
+.AboutPage .hobbyDetails {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 10vh 0;
-  width: 100%;
+  margin: auto 5vw auto 5vw;
+  z-index: 500;
 }
+
 .AboutPage .more {
   font-size: 1.5vw;
   margin: 0;
-  padding: 5px 0 0 20px;
   font-weight: 300;
   font-style: italic;
 }
-.AboutPage .hobbyName {
+.AboutPage .hobbyName.left {
   text-align: end;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0.5vh 3vw 0 0;
+}
+.AboutPage .hobbyName.right {
+  text-align: start;
   font-style: bold;
   font-weight: 600;
   font-size: 0.7em;
@@ -86,7 +114,7 @@
   width: 100%;
 }
 
-.hidden {
+/* .hidden {
   padding: 5px;
   opacity: 0;
   filter: blur(5px);
@@ -97,13 +125,6 @@
   opacity: 1;
   filter: blur(0);
   transform: scale(1, 1);
-}
-
-.AboutPage .layerTop {
-  /* background-image: url("/assets/blueOrangeTransition.svg"); */
-}
-
-.AboutPage .layerBot {
 }
 
 .before {
@@ -138,7 +159,7 @@
 .after3 {
   opacity: 1;
   filter: blur(0);
-}
+} */
 
 @keyframes popIn {
   0% {

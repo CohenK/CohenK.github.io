@@ -1,40 +1,32 @@
-import "../styles/Navbar.css";
+import React from "react";
+import "../styles/Navbar.css"
 
-interface Props {
-  theme: string;
-  handleClick: () => void;
+interface sidebarProps {
+    sections: string[];
+    activeComponent: string;
+    onNavigate: (section: string) => void;
+    switchTheme: ()=> void;
+    theme: string;
 }
 
-function Navbar({ theme, handleClick }: Props) {
-  return (
-    <div className="navbar-container">
-      <div className="left-side" />
-      <nav className="nav">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about/">About Me</a>
-          </li>
-          <li>
-            <a href="/skills/">Skills/Projects</a>
-          </li>
-          {/* <li>
-            <a href="/resources/">Resources</a>
-          </li> */}
-          <li>
-            <a href="/contact/">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div className="right-side">
-        <button onClick={handleClick}>
-          Switch to {theme === "light" ? "Dark" : "Light"} Theme
-        </button>
-      </div>
-    </div>
-  );
-}
+const SideBar:React.FC<sidebarProps> = ({sections, activeComponent, onNavigate, switchTheme, theme}) => {
+    return(
+        <div className="navbar">
+            <button className="themeButton" onClick={switchTheme}>
+                {theme === "light" ? "Dark" : "Light"}
+            </button>
+            <div className="sections">
+                {sections.map(section => (
+                    <div 
+                    key={section} 
+                    className={`section ${section===activeComponent ? "show" : ""}`} 
+                    onClick={()=>onNavigate(section)}>
+                        {section}
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
 
-export default Navbar;
+export default SideBar;

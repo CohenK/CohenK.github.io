@@ -1,0 +1,99 @@
+.projectCard{
+    transition: color 0.8s;
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: var(--background-secondary);
+    border-radius: 20px;
+}
+
+.projectCard.left{
+    margin-right: auto;
+    opacity: 0;
+}
+
+.projectCard.right{
+    margin-left: auto;
+    opacity: 0;
+}
+.projectCard.left.animate{
+    animation: 1.25s slideInLeft ease-in-out forwards;
+}
+
+.projectCard.right.animate{
+    animation: 1.25s slideInRight ease-in-out forwards;
+}
+
+.projectCard .projectThumbnail{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.projectCard .projectText{
+    margin: 1rem 1rem 1rem 1rem;
+    flex: 1 1 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projectCard .projectName{
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+.projectCard .projectDescription{
+    font-size: 1em;
+    text-align: justify;
+    margin: 0;
+}
+
+.projectCard .tagContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vw;
+    margin: 1rem 0 1rem 0;
+}
+
+.projectCard .tagItem{
+    text-align: center;
+    font-size: 0.9em;
+    background-color: var(--primaryAccent); 
+    list-style: none;
+    border: solid var(--border-color);
+    max-width: 15vw;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.projectCard .projectLinkBox{
+    text-align: center;
+    background-color: var(--background-secondary);
+    border: solid rgb(46, 44, 44);
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    margin: 0 0 0.5rem 0;
+}
+
+.projectCard .projectLink{
+    text-decoration: none;
+    color: var(--text-accent);
+}
+
+.projectCard .projectLinkBox:hover{
+    border-color: var(--text-primary);
+    color: var(--text-secondary);
+}
+
+@keyframes slideInLeft {
+    0%{translate: -150%;}
+    100%{translate: 0%;
+    opacity: 1;}
+}
+
+@keyframes slideInRight {
+    0%{translate: 150%;}
+    100%{translate: 0%;
+    opacity: 1;}
+}

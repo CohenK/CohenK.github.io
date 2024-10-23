@@ -1,0 +1,31 @@
+{
+    "projects":[
+    {
+        "name":"MPM",
+        "description": "Password management application written in python that uses the cryptography library to encrypt user data and generate cryptographically safe passwords.",
+        "image":"/assets/Projects/MPM_Login.png",
+        "link":"https://github.com/CohenK/MPM",
+        "tags":["Python", "Tkinter", "Encryption"]
+    },
+    {
+        "name":"InGen",
+        "description": "A PDF invoice generator that stores product catalgue data for invoice generation using sqlite.",
+        "image":"/assets/Projects/InGen_home.png",
+        "link":"https://github.com/CohenK/INGEN",
+        "tags":["C#","SQLite","QuestPDF","MVVM"]
+    },
+    {
+        "name":"Camradia",
+        "description": "A wellness and commuity organization website that uses Javascript and React to facilitate connections between like-minded people and encourages them to explore their interests and the outside world.",
+        "image":"/assets/Projects/Camradia.png",
+        "link":"https://github.com/camradia/Camradia",
+        "tags":["ReactJS","Firebase"]
+    },
+    {
+        "name":"OpenScientia",
+        "description": "OpenScientia is a user-friendly web application that allows you to access data directly from NASA archives. Here, you can explore various types of data, knowledge, and information from NASA with just a few clicks.",
+        "image":"/assets/Projects/OpenScientia.png",
+        "link":"https://github.com/Prithwis-2023/OpenScientia",
+        "tags":["Python","Flask", "NASA API"]
+    }]
+}

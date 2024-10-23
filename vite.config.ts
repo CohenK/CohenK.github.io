@@ -10,15 +10,12 @@ export default defineConfig({
   root,
   plugins: [react()],
   build: {
-    outDir,
+    outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        about: resolve(root, "about", "index.html"),
-        skills: resolve(root, "skills", "index.html"),
-        // resources: resolve(root, 'resources', 'index.html'),
-        contact: resolve(root, "contact", "index.html"),
+        projects: resolve(root, "projects", "index.html"),
       },
     },
   },

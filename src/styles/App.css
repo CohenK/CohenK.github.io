@@ -1,124 +1,76 @@
 :root {
-  --background-primary: white;
-  --background-secondary: rgb(79, 79, 79);
-  --text-primary: rgb(0, 0, 0);
-  --text-secondary: white;
+  --background-primary: rgb(222, 218, 218);
+  --background-thirtiary: white;
+  --background-secondary: #355f81;
+  --border-color: #a4cadd;
+  --text-primary: #000000;
+  --text-accent: #325a81;
+  --primaryAccent: #5e90da;
 
-  --accent1: rgb(96, 16, 129);
-  --accent2: rgb(47, 177, 177);
-  --accent3: rgb(234, 196, 95);
-  /* 
-  --primaryAccentT1: #5cb69d;
-  --primaryAccentT2: #90bb86;
-  --primaryAccentT3: #c1c071; */
-
-  --primaryAccentT1: #843f78;
-  --primaryAccentT2: #a56a70;
-  --primaryAccentT3: #c89768;
-
-  --vertical-margin: 240px;
-  --default-font-size: 40px;
-  --bottomLink: url("public/assets/waveWhiteBG.svg");
 }
 
 [data-theme="dark"] {
-  --background-primary: rgb(79, 79, 79);
-  --background-secondary: rgb(39, 39, 39);
-  --text-primary: rgb(213, 213, 213);
-  --text-secondary: white;
-  --accent1: rgb(47, 177, 177);
-  --accent2: rgb(96, 16, 129);
-
-  --primaryAccentT1: #5cb69d;
-  --primaryAccentT2: #90bb86;
-  --primaryAccentT3: #c1c071;
-
-  --bottomLink: url("public/assets/waveTransparentBG.svg");
+  --background-primary: #141416;
+  --background-secondary: #2f3d46;
+  --background-thirtiary: #11242a;
+  --border-color: #364f53;
+  --text-primary: #cad2c5;
+  --text-accent: #517970;
+  --primaryAccent: #85a98d;
 }
 
 .app {
+  transition: color 0.8s;
+  color: var(--text-primary);
   background-color: var(--background-primary);
   font-size: large;
   font-weight: bold;
   transition: all 0.6s;
-  min-height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  /*hiding scrollbars*/
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
 }
 
-.top-container {
-  transition: all 0.6s;
-  background-color: var(--background-primary);
-  z-index: 500;
-  position: fixed;
-  padding-left: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 99px;
+.app::-webkit-scrollbar {
+  display: none;
 }
-
-.Left {
+.nav {
+  width: 7vw;
+  height: 30vh;
   position: fixed;
   background-color: inherit;
   z-index: 2000;
-  top: 99px;
+  top: 2vh;
   left: 0;
-  width: 13vw;
-  height: 86vh;
-  border-right: solid 1px gray;
-}
-.Middle {
-  background-color: inherit;
-  margin: 0 13vw 0 13vw;
-  padding-top: 99px;
 }
 
-.Right {
+.links {
+  width: 5vw;
   position: fixed;
-  background-color: inherit;
   z-index: 2000;
-  top: 99px;
-  right: 0;
-  width: 13vw;
-  height: 86vh;
-  border-left: solid 1px gray;
+  bottom: 0;
+  right: 3vw;
 }
 
-.AltLeft {
-  position: fixed;
+.content {
   background-color: inherit;
-  z-index: 2000;
-  top: 99px;
-  left: 0;
-  width: 13vw;
-  height: 53vh;
-  border-right: solid 1px gray;
-}
-.AltRight {
-  position: fixed;
-  background-color: inherit;
-  z-index: 2000;
-  top: 99px;
-  right: 0;
-  width: 13vw;
-  height: 53vh;
-  border-left: solid 1px gray;
+  margin: 0 9vw 0 9vw;
+  height: 100vh;
 }
 
-.HomeLeft {
-  position: fixed;
-  background-color: inherit;
-  top: 99px;
-  left: 0;
-  width: 13vw;
-  border-right: none;
-}
-.HomeRight {
-  position: fixed;
-  background-color: inherit;
-  top: 99px;
-  right: 0;
-  width: 13vw;
-  border-left: none;
+@media (max-width: 800px) {
+  .content{
+    margin: 0 12vw 0 12vw;
+  }
+  .nav {
+    width: 11vw;
+  }
+  .links{
+    width: 11vw;
+  }
 }
