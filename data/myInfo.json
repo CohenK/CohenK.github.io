@@ -1,0 +1,64 @@
+{
+    "introduction" : "My name is Haoxian(Cohen) Kang, and I hold a Bachelor's degree in Mathematics of Computation from UCLA. I have been a software engineer working in frontend and backend since 2023.",
+    "myPicture": "\\assets\\me.jpg",
+    "aboutMe":"As a young boy my favorite toys were Legos and puzzles. Legos gave me the creative freedom piece by piece to bring to life whatever I imagined, creativity and imagination were the only rules. Puzzles taught me to be a critical thinker and more importantly to never give up. Due to what I liked as a child, I naturally gravitated towards programming. Just as with Legos and puzzles, programming allows me to bring my ideas to life, add my own personal touch and exercise my problem solving skills.",
+    "hobbies" :  [
+        [
+          "table tennis",
+          "Surrounded by people that enjoyed the sport, a full body workout and develops hand-eye coordination the sport naturally rubbed off on me.",
+          "/assets/racket.png"
+        ],
+        [
+          "origami",
+          "I love to express my creativity, and origami is the perfect mix of complex geometry and problem-solving. Along with its multitude of applications in technology, such as NASA's probes, it's also a beautiful art form.",
+          "/assets/flowers.png"
+        ],
+        [
+          "cycling",
+          "Skipping traffic on grocery trips, getting a break from technology and the breeze blowing against my face when I am out on a ride feels great.",
+          "/assets/bike.png"
+        ],
+        [
+          "camping",
+          "It's great to leave the city behind once in a while to relax outdoors, take in what nature has to offer and enjoy the company of friends and family.",
+          "/assets/camping2.png"
+        ],
+        [
+          "Gundam plastic models",
+          "Building these model kits is a joy as I get see the ingenuity and mechanical engineering employed to fit so much detail into such a small and compact package.",
+          "/assets/unicorn.jpg"
+        ],
+        [
+          "3D modelling",
+          "What started out as an elective class to fill a semester quickly became a pastime to relax the mind and give me a quiet place to concentrate and reflect on my thoughts.",
+          "/assets/blade2.png"
+        ]
+    ],
+    "resources":
+    [
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/haoxiankang/",
+      "Add me!",
+      "\\assets\\linkedIn.png"
+    ],
+    [
+      "Github",
+      "https://github.com/CohenK",
+      "Let's collab!",
+      "\\assets\\github.png"
+    ],
+    [
+      "Resume",
+      "https://drive.google.com/file/d/1JQEKkhX9YYC0Hm_VZ4FHreM3IJ7x0zEP/view?usp=drive_link",
+      "Copy of my resume on Google Drive",
+      "\\assets\\resume.png"
+    ],
+    [
+      "Email",
+      "mailto:kangcohen@gmail.com",
+      "kangcohen@gmail.com",
+      "\\assets\\gmail.png"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "skills":[
+        ["HTML", "/assets/skills/HTML.png"],
+        ["CSS", "/assets/skills/CSS.png"],
+        ["Python", "/assets/skills/Python.png"],
+        ["C++", "/assets/skills/C++.png"],
+        ["C#", "/assets/skills/Csharp.png"],
+        ["Unity", "/assets/skills/Unity.png"],
+        ["Javascript", "/assets/skills/Javascript.png"],
+        ["React", "/assets/skills/React.png"],
+        ["Typescript", "/assets/skills/Typescript.png"],
+        ["Node", "/assets/skills/node.png"],
+        ["Matlab", "/assets/skills/Matlab.png"],
+        ["MySQL", "/assets/skills/SQL.png"]
+    ]
+}
