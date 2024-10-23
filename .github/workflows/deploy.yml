@@ -46,6 +46,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
