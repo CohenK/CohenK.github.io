@@ -38,6 +38,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Show current directory
+        run: pwd
+
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
@@ -45,7 +48,9 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
       
-      - name: Show current directory
-        run: pwd
+      
