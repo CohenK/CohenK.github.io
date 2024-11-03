@@ -9,6 +9,7 @@ interface props{
 const Introduction = forwardRef<HTMLElement, props>(({id}, ref) => {
     return (
       <section ref={ref} id={id} className="Introduction">
+        <p className="quoteFirst">Opportunities are for</p>
         <div className="heroBackground">
           <div className="pictureBackground">
             <img id={id} className="myPicture" src={myInfo.myPicture}/>
@@ -24,10 +25,8 @@ const Introduction = forwardRef<HTMLElement, props>(({id}, ref) => {
             </p>
           </div>
         </div>
-        <p className="quoteFirst">Opportunities are for</p>
-        
-
         <p className="quoteSecond"> those who are prepared</p>
+        
       </section>
     );
   });

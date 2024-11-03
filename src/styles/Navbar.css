@@ -54,3 +54,12 @@
         transform: translateX(1vw);
     }
 }
+
+@media (max-width: 800px){   
+    .section{
+        font-size: 2vh;
+    }
+    .themeButton{
+        font-size: 2vh;
+    }
+}

@@ -60,3 +60,21 @@
     row-gap: 1rem;
     padding: 1rem;
 }
+
+@media (max-width: 800px) {
+    .allProjects .projectsList{
+        grid-template-columns: 1fr;
+    }
+    .allProjects .mainPageLink{
+        position: absolute;
+        top: 1.4rem;
+        left: 1rem;
+        padding: 0.5rem 0 0.5rem 0;
+        width: 15vw;
+        font-size: 2vw;
+    }
+    .allProjects a{
+        text-decoration: none;
+        color: var(--text-primary);
+    }
+}

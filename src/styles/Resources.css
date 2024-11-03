@@ -41,3 +41,13 @@
   max-width: 2.7vw;
   object-position: center;
 }
+
+@media (max-width: 800px) {
+  .ResourcesPage .resourceIcon {
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    max-width: 8vw;
+    object-position: center;
+  }
+}

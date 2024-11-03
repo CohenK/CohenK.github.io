@@ -51,3 +51,10 @@ a{
 .projects .allProjectsLink:hover{
     background-color: var(--background-secondary);
 }
+
+@media (max-width: 800px) {
+    .projects .allProjectsLink{
+        width: 100%;
+        font-size: 3vw;
+    }
+}

@@ -1,5 +1,8 @@
 .Introduction {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     transition: color 0.8s;
     color: var(--text-primary);
     min-height: 100vh;
@@ -8,13 +11,12 @@
 }
 
 .Introduction .heroBackground{
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     width: 81vw;
     height: 50vh;
-    top: 23vh;
-    left: 0;
     background-color: var(--background-thirtiary);
     opacity: 0;
     animation: slideLeft 1s forwards ease-in-out;
@@ -53,7 +55,7 @@
     color: var(--primaryAccent);
 }
 .Introduction .quoteFirst{
-    position: absolute;
+    text-align: end;
     font-size: 3.5vw;
     top: 0vh;
     left: 40vw;
@@ -62,7 +64,7 @@
     animation: none;
 }
 .Introduction .quoteSecond{
-    position: absolute;
+    text-align: start;
     font-size: 3.5vw;
     top: 85vh;
     left: 0vw;
@@ -103,26 +105,43 @@ span{
 }
 
 @media (max-width: 800px){   
+    .Introduction{
+        justify-content: space-around;
+    }
+    .Introduction .quoteFirst{
+        font-size: 5vw;
+        color: var(--primaryAccent);
+        opacity: 0.3;
+        animation: none;
+    }
+    .Introduction .quoteSecond{
+        font-size: 5vw;
+        color: var(--primaryAccent);
+        opacity: 0.3;
+        animation: none;
+    }
     .Introduction .heroBackground{
         flex-direction: column;
-        width: 70%;
-        top: 10%;
-        left: 15%;
-        height: 70vh;
+        width: 90%;
+        top: 20vh;
+        left: 5%;
+        height: 60vh;
+        animation: slideDown 1s forwards ease-in-out;
     }
     .Introduction .myPicture{
-        scale: 1;
+        scale: 1.5;
         margin-top: 5vh;
     }
     .Introduction .introText{
         text-align: center;
-        font-size: 4vw;
-    }
-    .Introduction span{
         font-size: 5vw;
     }
+    .Introduction span{
+        font-size: 6vw;
+    }
     .Introduction .callToAction{
-        font-size: 3vw;
+        text-align: center;
+        font-size: 4vw;
         top: 60%;
     }
     .Introduction .quoteFirst{

@@ -42,7 +42,7 @@
     background-color: var(--primaryAccent); 
     list-style: none;
     border: solid rgb(46, 44, 44);
-    max-width: 15vw;
+    max-width: none;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     color: var(--text-primary);
@@ -64,4 +64,10 @@
 .projectCardCompact .projectLink{
     text-decoration: none;
     color: var(--text-accent);
+}
+
+@media (max-width: 800px) {
+    .projectCardCompact .tagItem{
+        font-size: 3vw;
+    }
 }

@@ -104,3 +104,9 @@
 .SkillsPage li:nth-child(12) {
   animation-delay: 1400ms;
 }
+
+@media (max-width: 800px) {
+  .SkillsPage .skillName {
+    font-size: 2vw;
+  }
+}

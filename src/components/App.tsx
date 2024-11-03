@@ -19,7 +19,7 @@ const App:React.FC = () => {
   const skillRef = useRef<HTMLElement|null>(null);
   const projectRef = useRef<HTMLElement|null>(null);
   const aboutRef = useRef<HTMLElement|null>(null);
-  const sections = ['Intro','Skills','Projects','About'];
+  const sections = ['Intro','Skills','Apps','About'];
   const [activeComponent, setActiveComponent] = useState('');
 
   useEffect(()=>{
@@ -73,7 +73,7 @@ const App:React.FC = () => {
         <div className="content">
           <Introduction ref={introRef} id='Intro'/>
           <Skills ref={skillRef} activeComponent={activeComponent} id='Skills'/>
-          <Projects ref={projectRef} id="Projects"/>
+          <Projects ref={projectRef} id="Apps"/>
           <About ref={aboutRef} id='About'/>
         </div>
         <div className="links">

@@ -19,6 +19,12 @@
   --primaryAccent: #85a98d;
 }
 
+html{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
 .app {
   transition: color 0.8s;
   color: var(--text-primary);
@@ -68,9 +74,10 @@
     margin: 0 12vw 0 12vw;
   }
   .nav {
-    width: 11vw;
+    width: 15vw;
   }
   .links{
     width: 11vw;
+    height: 30vh;
   }
 }

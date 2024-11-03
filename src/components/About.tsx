@@ -20,12 +20,12 @@ const About = React.forwardRef<HTMLElement, props>(({id}, ref) => {
             <div className={`hobbyContainer ${index % 2 ===0?"left":"right"}`}>
               {index % 2 ===0?<img className="hobbyImg" src={item[2]}/>:
               <div className="hobbyDetails" key={item[0]}>
-                <p className="more">"{item[1]}"</p>
+                <div className="more">"{item[1]}"</div>
                 <u className={`hobbyName ${index % 2 ===0?"left":"right"}`}>{item[0]}</u>
               </div>}
               {index % 2 === 0?
               <div className="hobbyDetails" key={item[0]}>
-                <p className="more">"{item[1]}"</p>
+                <div className="more">"{item[1]}"</div>
                 <u className={`hobbyName ${index % 2 ===0?"left":"right"}`}>{item[0]}</u>
               </div>:<img className="hobbyImg" src={item[2]}/>}
             </div>
