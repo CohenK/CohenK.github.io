@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.AboutPage .aboutMe{
+.AboutPage .aboutMe {
   text-align: justify;
   font-size: 1.5em;
 }
@@ -56,16 +56,16 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.AboutPage .hobbyImg{
+.AboutPage .hobbyImg {
   width: 100%;
   height: auto;
   object-fit: fill;
   z-index: 1;
 }
-.AboutPage .left{
+.AboutPage .left {
   text-align: left;
 }
-.AboutPage .right{
+.AboutPage .right {
   text-align: right;
 }
 .AboutPage .hobbyDetails {
@@ -146,12 +146,11 @@
   }
 }
 
-
 @media (max-width: 800px) {
   .AboutPage .aboutTitle {
     font-size: 1.5em;
   }
-  .AboutPage .aboutMe{
+  .AboutPage .aboutMe {
     font-size: 1em;
   }
 }

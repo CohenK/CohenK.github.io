@@ -5,9 +5,10 @@
   scroll-snap-align: start;
   padding-top: 5vh;
   font-family: Mulish;
+  min-height: 100vh;
 }
 
-.SkillsPage .skillTitle{
+.SkillsPage .skillTitle {
   font-size: 3vw;
   font-family: Quattrocento;
   font-weight: 700;
@@ -28,11 +29,11 @@
   list-style-type: none;
 }
 
-.SkillsPage .hide{
+.SkillsPage .hide {
   opacity: 0;
 }
 
-.SkillsPage .skill{
+.SkillsPage .skill {
   opacity: 0;
   animation: fadeInLeft 0.3s linear forwards;
 }
@@ -54,7 +55,7 @@
 }
 
 @keyframes fadeInLeft {
-  0%{
+  0% {
     transform: translateX(-15%);
     filter: blur(3px);
     opacity: 0;

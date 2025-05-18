@@ -1,15 +1,4 @@
 :root {
-  --background-primary: rgb(222, 218, 218);
-  --background-thirtiary: white;
-  --background-secondary: #355f81;
-  --border-color: #a4cadd;
-  --text-primary: #000000;
-  --text-accent: #325a81;
-  --primaryAccent: #5e90da;
-
-}
-
-[data-theme="dark"] {
   --background-primary: #141416;
   --background-secondary: #2f3d46;
   --background-thirtiary: #11242a;
@@ -19,10 +8,10 @@
   --primaryAccent: #85a98d;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
-body{
+body {
   overflow-x: hidden;
 }
 .app {
@@ -39,7 +28,6 @@ body{
   /*hiding scrollbars*/
   scrollbar-width: none;
   -ms-overflow-style: none;
-
 }
 
 .app::-webkit-scrollbar {
@@ -53,6 +41,10 @@ body{
   z-index: 2000;
   top: 2vh;
   left: 0;
+}
+
+.spacer {
+  height: 5rem;
 }
 
 .links {
@@ -70,13 +62,13 @@ body{
 }
 
 @media (max-width: 800px) {
-  .content{
+  .content {
     margin: 0 12vw 0 12vw;
   }
   .nav {
     width: 15vw;
   }
-  .links{
+  .links {
     width: 11vw;
     height: 30vh;
   }

@@ -1,65 +1,66 @@
 .navbar {
-    width: 100%;
-    transition: color 0.8s;
-    background-color: var(--background-secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    outline: solid var(--border-color);
+  width: 100%;
+  transition: color 0.8s;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  outline: solid var(--border-color);
 }
-.sections{
-    margin: 1vh 0 0 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sections {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.section{
-    width: 100%;
-    text-align: center;
-    font-size: 2.5vh;
-    padding: 1vh 1vw;
-    box-sizing: border-box;
+.section {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5vh;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
 }
-.section:hover{
-    cursor: pointer;
+.section:hover {
+  cursor: pointer;
 }
 .section.show {
-    animation: selected 0.3s forwards;
+  animation: selected 0.3s forwards;
 }
 
-.themeButton{
-    color: var(--text-primary);
-    border-color: var(--text-secondary);
-    background-color: var(--primaryAccent);
-    font-weight: bold;
-    padding: 1vh 0;
-    border: none;
-    border-radius: 1.5rem;
-    width: 90%;
-    font-size: 1.3vw;
-    transition: all 0.5s;
+.themeButton {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+  background-color: var(--primaryAccent);
+  font-weight: bold;
+  padding: 1vh 0;
+  border: none;
+  border-radius: 1.5rem;
+  width: 90%;
+  font-size: 1.3vw;
+  transition: all 0.5s;
 }
 .themeButton:hover {
-    color: var(--text-secondary);
-    border-color: var(--primaryAccentT3);
-    border-width: 1px;
+  color: var(--text-secondary);
+  border-color: var(--primaryAccentT3);
+  border-width: 1px;
 }
 
 @keyframes selected {
-    0% { transform: scalex(1); }
-    100% 
-    {
-        background-color: var(--primaryAccent);
-        transform: translateX(1vw);
-    }
+  0% {
+    transform: scalex(1);
+  }
+  100% {
+    background-color: var(--primaryAccent);
+    transform: translateX(1vw);
+  }
 }
 
-@media (max-width: 800px){   
-    .section{
-        font-size: 2vh;
-    }
-    .themeButton{
-        font-size: 2vh;
-    }
+@media (max-width: 800px) {
+  .section {
+    font-size: 2vh;
+  }
+  .themeButton {
+    font-size: 2vh;
+  }
 }
